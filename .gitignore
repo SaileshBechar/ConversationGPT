@@ -1,0 +1,23 @@
+__pycache__/
+wavs/
+*.pyc
+key.json
+tokens.py
+myenv/
+promptr-front-end/node_modules
+promptr-front-end/.pnp
+promptr-front-end/.pnp.js
+# testing
+promptr-front-end/coverage
+# production
+promptr-front-end/build
+promptr-front-end/dist
+# misc
+promptr-front-end/.DS_Store
+promptr-front-end/.env.local
+promptr-front-end/.env.development.local
+promptr-front-end/.env.test.local
+promptr-front-end/.env.production.local
+promptr-front-end/npm-debug.log*
+promptr-front-end/yarn-debug.log*
+promptr-front-end/yarn-error.log*

@@ -1,0 +1,51 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "promptr-front-end",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - promptr-front-end",
+			"detail": "react-scripts build"
+		},
+		{
+			"label": "start-postgres-server-and-create-db",
+			"type": "shell",
+			"isBackground": true,
+			"command": "cmd /c start-postgres-server-and-create-db.cmd",
+			"presentation": { "reveal": "silent" },
+			"problemMatcher": [{
+			"pattern": [{
+				"regexp": ".",
+				"file": 1,"line": 1,
+				"column": 1,"message": 1
+			}],
+			"background": {
+				"activeOnStart": true,
+				"beginsPattern": { "regexp": "." },
+				"endsPattern": { "regexp": "." }
+			},
+			}]
+		},
+		{
+			"label": "Build",
+			"dependsOn": [
+				"npm: build - promptr-front-end",
+				"start-postgres-server-and-create-db"
+			]
+		},
+		{
+			"label": "stop",
+			"command": "echo ${input:terminate}",
+			"type": "shell"
+		},
+	],
+	"inputs": [{
+		"id": "terminate",
+		"type": "command",
+		"command": "workbench.action.tasks.terminate",
+		"args": "terminateAll"
+	}]
+}

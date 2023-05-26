@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}"
+    },
+        {
+            "name": "Python: app.py",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build",
+            "gevent": true,
+            "postDebugTask": "stop"
+        }
+    ]
+}
