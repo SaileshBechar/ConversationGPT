@@ -1,6 +1,8 @@
-https://github.com/SaileshBechar/ConversationGPT/blob/master/assets/demo2x.mp4
-
 # Your Science and Coding Voice Assistant
+
+
+https://github.com/SaileshBechar/ConversationGPT/assets/38445041/e465436d-187d-4241-85e6-a6454d0fc78d
+
 
 ## Running Server
 
